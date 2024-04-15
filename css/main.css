@@ -1,47 +1,48 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
-html {
-  height: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-seriff;
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* background: linear-gradient(to right, #bf5c21, #964413); */
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
 }
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+.logo{
+    flex-basis: 30%;
 }
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+.logo img{
+    width: 150px;
 }
 
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
+.nav-links{
+    flex: 1;
+    text-align: right;
 }
 
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
 }
