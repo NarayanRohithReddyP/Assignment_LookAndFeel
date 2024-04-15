@@ -4,13 +4,12 @@
     font-family: sans-seriff;
 }
 
-.main {
+#header {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    /* background: linear-gradient(to right, #bf5c21, #964413); */
-    background-image: url('../img/background.png');
+    background: linear-gradient(to right, #006848, #d6caa0);
     background-size: cover;
     background-position: center;
 }
@@ -40,9 +39,51 @@ nav{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
+    padding: 8px 12px;
+    position: relative;
 }
 
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
+    font-size: 23px;
 }
+
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+nav .fa{
+    display: none;
+}
+
