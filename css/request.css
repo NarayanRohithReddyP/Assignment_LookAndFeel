@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-seriff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+    .container h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+/* About Section Styles */
+#about {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+    #about h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+/* How It Works Section Styles */
+#how-it-works {
+    padding: 50px 0;
+}
+
+    #how-it-works h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .step h3 {
+        margin-top: 0;
+    }
+
+/* Styles for the fundraising section */
+#start-fundraising {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+    #start-fundraising h2 {
+        margin-bottom: 20px;
+    }
+
+    #start-fundraising button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        #start-fundraising button:hover {
+            background-color: #0056b3;
+        }
+
+#fundraising-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+    #fundraising-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #fundraising-form select,
+    #fundraising-form input[type="number"],
+    #fundraising-form input[type="text"],
+    #fundraising-form input[type="email"],
+    #fundraising-form input[type="tel"],
+    #fundraising-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #fundraising-form button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        #fundraising-form button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    footer p {
+        margin:  0;
+            
+    }
