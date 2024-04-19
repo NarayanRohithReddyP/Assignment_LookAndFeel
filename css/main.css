@@ -74,7 +74,7 @@ nav .fa {
 }
 
 #text {
-    background: linear-gradient(to right, #006848, #d6caa0);
+    background: #000000;
     color: #fff;
     text-align: center;
     padding: 50px 0;
@@ -108,7 +108,22 @@ nav .fa {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    height: 34vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+    .decorated-box img {
+        width: 50%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 
 .know-more-btn {
     display: inline-block;
@@ -118,6 +133,7 @@ nav .fa {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
     .know-more-btn:hover {
