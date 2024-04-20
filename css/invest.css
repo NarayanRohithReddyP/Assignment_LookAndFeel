@@ -1,0 +1,134 @@
+/* Include or import existing CSS for header here */
+/* Example: @import url('path-to-your-header-css-file'); */
+
+/* Main container styles */
+.container {
+    border: 1px solid #000;
+    width: 85%; /* Set your desired width */
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; /* This centers the text of inline or inline-block elements */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.title {
+    flex-grow: 1; /* This ensures the title can grow to fill the space */
+    margin: 0; /* Reset margins to ensure centering */
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute; /* Position absolutely to allow true centering */
+    width: 100%; /* Full width for true centering */
+    left: 0; 
+}
+
+.edit-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Content styles */
+    .content {
+    
+}
+
+.content-row {
+    display: flex; /* Use flexbox to align image and text side by side */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+}
+
+.fundraising-image {
+    max-width: 20%; /* Adjust based on your preference */
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+.text-content {
+    flex-grow: 1; /* Allows text content to take up remaining space */
+    text-align: left;
+    margin-left: 40px;
+}
+
+    .text-content dl {
+        width: 100%;
+        padding: 0;
+        overflow: hidden; /* Ensures that the container handles floated elements properly */
+        margin-bottom: 6px;
+    }
+
+    .text-content dt {
+        float: left;
+        clear: left;
+        font-weight: bold;
+        margin-right: 10px; /* Adjust spacing as needed */
+        margin-bottom: 8px; /* Adds a gap between the terms */
+    }
+
+    .text-content dd {
+        float: left;
+        padding: 0;
+        margin: 0; /* Reset default margin */
+        margin-bottom: 16px; /* Adds a gap between descriptions */
+    }
+
+    /* This adds a colon after the DT content */
+    .text-content dt::after {
+        content: ":";
+    }
+
+    /* Clear fix for dl to contain floated dt and dd */
+    .text-content dl::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.story {
+    clear: both; /* Ensures the story paragraph is below the list */
+    margin-top: 8px;
+}
+
+
+/* Footer styles */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.invest-button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* General text styles */
+.goal,
+.category,
+.location,
+.story {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Include or import existing CSS for footer here */
+/* Example: @import url('path-to-your-footer-css-file'); */
+
+/* Additional existing CSS for other elements */
