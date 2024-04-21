@@ -2,11 +2,15 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crowd Funder</title>
+    <title>Distribution of Investments Across Categories</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/resources.css" />
     <link rel="icon" type="image/jpg" href="img/favicon.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js" defer></script>
+
 </head>
 <body>
     <section id="header">
@@ -28,40 +32,9 @@
         </nav>
     </section>
 
-    <section id="text">
-        <div class="text-box">
-            <h1>Crowd Funder</h1>
-            <p>Where Ideas Find Wings and Backers</p>
-        </div>
-    </section>
-
-    <section id="display-image-section">
-        <img src="img/display-image.jpg" alt="Display" id="main-display-image">
-    </section>
-
-
-    <section id="actions">
-        <div class="action-box">
-            <div class="decorated-box">
-                <img src="img/investing.webp" alt="investing image">
-                <div class="text-content">
-                    <h2>Interested in Investing?</h2>
-                    <p>Explore our investment opportunities and help bring innovative ideas to life!</p>
-                    <a href="invest.html" class="know-more-btn">Know More</a>
-                </div>
-            </div>
-
-            <div class="decorated-box">
-                <img src="img/request.jpg" alt="request image">
-                <div class="text-content">
-                    <h2>Have a Project Idea?</h2>
-                    <p>Submit your project proposal and get the support you need to make it a reality!</p>
-                    <a href="request.html" class="know-more-btn">Know More</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <div class="chart-container">
+        <canvas id="investmentChart"></canvas>
+    </div>
 
 
     <footer>

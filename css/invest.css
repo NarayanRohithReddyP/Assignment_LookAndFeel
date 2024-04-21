@@ -1,5 +1,8 @@
-/* Include or import existing CSS for header here */
-/* Example: @import url('path-to-your-header-css-file'); */
+body {
+    font-family: 'Roboto', sans-serif; /* Utilizing Roboto font */
+    margin: 0;
+    padding: 0;
+}
 
 /* Main container styles */
 .container {

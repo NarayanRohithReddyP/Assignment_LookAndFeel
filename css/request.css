@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-seriff;
+    font-family: 'Roboto', sans-serif; /* Utilizing Roboto font */
     margin: 0;
     padding: 0;
 }
@@ -11,64 +11,60 @@ body {
     padding: 20px 0;
 }
 
-.container h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.container h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
+    .container h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 
 /* About Section Styles */
 #about {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Changed to match design reference */
     padding: 50px 0;
 }
 
-#about h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
+    #about h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
 /* How It Works Section Styles */
-#how-it-works {
-    padding: 50px 0;
+#how-it-works .container {
+    /* Container styles if needed */
 }
 
 #how-it-works h2 {
+    /* H2 styles if needed */
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
-#how-it-works h2 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-
-.steps {
+#how-it-works .steps {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center; /* Ensures vertical alignment is centered */
+    text-align: center;
 }
 
-.step {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#how-it-works .step {
+    flex: 1; /* Gives each step equal width */
+    display: flex; /* Enables flexbox for vertical stacking */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Center-aligns items horizontally */
+    justify-content: center; /* Center-aligns items vertically */
 }
 
-    .step h3 {
-        margin-top: 0;
+    #how-it-works .step img {
+        max-width: 100%; /* Limits the image width to the container's width */
+        max-height: 200px; /* Sets a maximum height for all images */
+        object-fit: contain; /* Ensures the image is scaled properly */
+        margin-bottom: 10px; /* Space between the image and the text */
     }
+
+#how-it-works h3 {
+    margin-top: 0; /* Adjust if needed */
+    /* Center-aligns the h3 text */
+}
 
 /* Styles for the fundraising section */
 #start-fundraising {
@@ -78,23 +74,26 @@ body {
 }
 
     #start-fundraising h2 {
-        margin-bottom: 20px;
+        margin-bottom: 37px;
     }
 
     #start-fundraising button {
-        background-color: #007bff;
+        background-color: #006848; /* Changed to match design reference */
         color: #fff;
         border: none;
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s;
+        display: inline-block; /* This makes sure the button respects text-align center */
+        margin: 0 auto;
     }
 
         #start-fundraising button:hover {
-            background-color: #0056b3;
+            background-color: #004f36; /* Changed to match design reference */
         }
 
+/* No changes needed here; these styles are standard for forms */
 #fundraising-form {
     margin-top: 20px;
     text-align: left;
@@ -105,38 +104,105 @@ body {
         margin-bottom: 5px;
     }
 
-    #fundraising-form select,
-    #fundraising-form input[type="number"],
+    /* General input styles; ensure inputs take full width within their column */
     #fundraising-form input[type="text"],
     #fundraising-form input[type="email"],
     #fundraising-form input[type="tel"],
-    #fundraising-form textarea {
-        width: 100%;
-        padding: 8px;
+    #fundraising-form input[type="number"],
+    #fundraising-form textarea,
+    #fundraising-form select {
+        width: 100%; /* Full width within parent */
+        padding: 8px; /* Padding for aesthetics */
+        margin-bottom: 10px; /* Space between inputs */
+        border: 1px solid #ccc; /* Border styling */
+        border-radius: 4px; /* Rounded corners */
+        box-sizing: border-box; /* Box sizing to include padding in width */
+    }
+
+    /* Row container for side-by-side fields; flex display for responsive layout */
+    #fundraising-form .row {
+        display: flex;
         margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+    }
+
+    /* Column styling for individual fields; margin for spacing */
+    #fundraising-form .col {
+        flex: 1; /* Flex-grow to equally share available space */
+        margin-right: 10px; /* Space between columns, except for the last one */
+    }
+
+        /* Ensure the last column element doesn't have a margin on the right */
+        #fundraising-form .col:last-child {
+            margin-right: 0; /* Removed margin for the last column in a row */
+        }
+
+    #fundraising-form input[type="file"] {
+        margin-bottom: 20px; /* Adjust the value as needed for your design */
     }
 
     #fundraising-form button[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+        display: block; /* Overriding default inline display */
+        width: fit-content; /* Shrinking the button width to its content */
+        background-color: #006848; /* Button background color */
+        color: white; /* Text color */
+        padding: 10px 20px; /* Padding for size */
+        border: none; /* No border */
+        border-radius: 4px; /* Rounded corners */
+        cursor: pointer; /* Cursor to indicate clickability */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+        margin: 20px auto; /* Vertical margin kept at 20px, horizontal margins auto */
     }
 
+
+        /* Hover effect for the submit button */
         #fundraising-form button[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #004f36; /* Darken background color on hover */
         }
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-content p{
+    margin-bottom: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close-button:hover,
+    .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background: linear-gradient(to right, #006848, #d6caa0);
     color: #fff;
     text-align: center;
     padding: 20px 0;

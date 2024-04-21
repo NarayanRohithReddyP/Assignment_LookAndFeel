@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/request.css" />
     <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -19,6 +20,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="invest.html">INVEST</a></li>
                     <li><a href="request.html">REQUEST</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </div>
@@ -35,93 +37,164 @@
 
         <section id="how-it-works">
             <div class="container">
-                <h2>How It Works</h2>
+                <h2>HOW IT WORKS</h2>
                 <div class="steps">
                     <div class="step">
+                        <img src="img/story.jpg" alt="Tell Your Story"> 
                         <h3>Tell Your Story</h3>
-                        <p>Share your passion, your purpose, and your vision with the world. Use compelling storytelling to connect with your audience and inspire them to support your cause.</p>
                     </div>
+
                     <div class="step">
-                        <h3>Set Your Goal</h3>
-                        <p>Determine how much funding you need to achieve your objectives. Whether it's covering medical expenses, launching a new business, or supporting a social cause, set a realistic fundraising goal that aligns with your needs.</p>
+                        <img src="img/goal.jpg" alt="Set your goal"> 
+                        <h3>Set your goal</h3>
                     </div>
+
                     <div class="step">
-                        <h3>Spread the Word</h3>
-                        <p>Rally support from your friends, family, and community. Share your campaign on social media, email, and other channels to reach a wider audience and maximize your impact.</p>
+                        <img src="img/spread.jpg" alt="Spread the word"> 
+                        <h3>Spread the word</h3>
                     </div>
+
                     <div class="step">
-                        <h3>Track Your Progress</h3>
-                        <p>Keep your supporters updated on your progress and milestones. Use our built-in tools to track donations, thank your supporters, and show appreciation for their generosity.</p>
+                        <img src="img/progress.jpg" alt="Track your progress"> 
+                        <h3>Track your progress</h3>
                     </div>
+
                     <div class="step">
-                        <h3>Make a Difference</h3>
-                        <p>With every donation, you're one step closer to reaching your goal and making a positive impact. Whether it's funding a life-saving treatment, supporting a local initiative, or bringing a creative project to life, your campaign has the power to change lives.</p>
+                        <img src="img/success.jpg" alt="Make a progress"> 
+                        <h3>Make a progress</h3>
                     </div>
+                    <!-- Repeat for each step, make sure to replace 'path_to_your_image.jpg' with actual image paths and appropriate 'alt' text -->
+                    <!-- ... -->
                 </div>
             </div>
         </section>
+
+
     </main>
 
     <section id="start-fundraising">
         <div class="container">
             <h2>Create your fundraising campaign today and let your dreams take flight!</h2>
             <button id="start-button">Start</button>
+
             <form id="fundraising-form" style="display: none;">
-                <label for="country">Select Country:</label>
-                <select id="country">
-                    <option value="USA" selected>United States</option>
-                    <option value="Canada">Canada</option>
-                    <option value="UK">United Kingdom</option>
-                    <!-- Add more countries as needed -->
-                </select><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="col">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
 
-                <label for="zip">Zip Code:</label>
-                <input type="text" id="zip" minlength="5" maxlength="10" pattern="\d{5,}" required><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="col">
+                        <label for="phone">Phone No</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
 
-                <label for="category">Select Category:</label>
-                <select id="category">
-                    <option value="medical">Medical</option>
-                    <option value="memorial">Memorial</option>
-                    <!-- Add more categories as needed -->
-                </select><br>
 
-                <label for="raising-for">Who are you raising for:</label>
-                <select id="raising-for">
-                    <option value="yourself">Yourself</option>
-                    <option value="someone-else">Someone Else</option>
-                    <option value="charity">Charity</option>
-                </select><br>
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" name="address1" required>
 
-                <label for="starting-amount">Starting Amount:</label>
-                <input type="number" id="starting-amount" min="0" max="9999999999" required><br>
+                <label for="address2">Address 2 (optional)</label>
+                <input type="text" id="address2" name="address2">
 
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" required><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="col">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
 
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" required><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="col">
+                        <label for="zipcode">Zipcode</label>
+                        <input type="text" id="zipcode" name="zipcode" required>
+                    </div>
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" required><br>
+                <label for="category">Select Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="environment">Environment</option>
+                    <!-- Add more options as needed -->
+                </select>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" required><br>
+                <div class="row">
+                    <div class="col">
+                        <label for="raising-for">Who are you raising for?</label>
+                        <select type="text" id="raising-for" name="raising-for" required>
+                            <option value="">Please select</option> <!-- Prompt the user to select an option -->
+                            <option value="yourself">Yourself</option>
+                            <option value="someone_else">Someone else</option>
+                            <option value="charity">Charity</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="starting-amount">Starting Amount</label>
+                        <input type="number" id="starting-amount" name="starting-amount" min="0" required>
+                    </div>
+                </div>
 
-                <label for="address">Address:</label>
-                <textarea id="address" required></textarea><br>
 
-                <label for="story">Tell Your Story:</label>
-                <textarea id="story" required></textarea><br>
+                <label for="picture">Choose a Picture (optional)</label>
+                <input type="file" id="picture" name="picture">
 
-                <label for="pictures">Pictures:</label>
-                <input type="file" id="pictures" accept="image/*" multiple><br>
+                <label for="message">Message (optional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
 
-                <label for="title">Title for the Fundraiser:</label>
-                <input type="text" id="title" required><br>
-
-                <button type="submit">Submit</button>
+                <button type="submit">Request Now</button>
             </form>
         </div>
+
+        <!-- Preview Section for displaying entered data -->
+        <!-- Modal for Previewing Form Data -->
+        <div id="preview-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Preview Your Information</h2>
+                <p><strong>First Name:</strong> <span id="preview-first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="preview-last-name"></span></p>
+                <p><strong>Email:</strong> <span id="preview-email"></span></p>
+                <p><strong>Phone No:</strong> <span id="preview-phone"></span></p>
+                <p><strong>Address 1:</strong> <span id="preview-address1"></span></p>
+                <p><strong>Address 2:</strong> <span id="preview-address2"></span></p>
+                <p><strong>City:</strong> <span id="preview-city"></span></p>
+                <p><strong>State:</strong> <span id="preview-state"></span></p>
+                <p><strong>Country:</strong> <span id="preview-country"></span></p>
+                <p><strong>Zipcode:</strong> <span id="preview-zipcode"></span></p>
+                <p><strong>Category:</strong> <span id="preview-category"></span></p>
+                <p><strong>Raising For:</strong> <span id="preview-raising-for"></span></p>
+                <p><strong>Starting Amount:</strong> <span id="preview-starting-amount"></span></p>
+                <p><strong>Message:</strong> <span id="preview-message"></span></p>
+                <p><strong>Picture:</strong><br><img id="preview-image" src="" alt="No Image" style="max-width: 200px; max-height: 200px;" /></p>
+
+                <!-- Buttons for Edit, Delete, and Submit -->
+                <button onclick="editForm()">Edit</button>
+                <button onclick="deleteForm()">Delete</button>
+                <button onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+
+
     </section>
 
 
