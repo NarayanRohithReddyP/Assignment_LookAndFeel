@@ -6,10 +6,13 @@ body {
 
 /* Main container styles */
 .container {
-    border: 1px solid #000;
-    width: 85%; /* Set your desired width */
-    margin: 20px auto;
-    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background similar to your decorated-box */
+    border: 1px solid #ccc; /* Subtle border as seen in other elements */
+    border-radius: 5px; /* Smoothed corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 20px; /* Consistent padding */
+    margin: 20px auto; /* Centered with vertical spacing */
+    width: 85%; /* Standard width across your pages */
     box-sizing: border-box;
 }
 
@@ -33,11 +36,6 @@ body {
     left: 0; 
 }
 
-.edit-button {
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: auto;
-}
 
 /* Content styles */
     .content {
@@ -102,6 +100,25 @@ body {
     margin-top: 8px;
 }
 
+.invest-button {
+    display: inline-block;
+    width: auto; /* Adjust width based on content */
+    padding: 10px 20px; /* Sufficient padding for button size */
+    background-color: #006848; /* Primary color from your header */
+    color: #fff; /* White text for readability */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text for emphasis */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Consistent with other buttons */
+}
+
+    .invest-button:hover {
+        background-color: #004f36; /* Darker shade on hover for interaction feedback */
+        color: #d6caa0; /* Secondary color from your gradient for a slight highlight */
+    }
+
 
 /* Footer styles */
 .footer {
@@ -130,8 +147,3 @@ body {
         padding: 10px;
     }
 }
-
-/* Include or import existing CSS for footer here */
-/* Example: @import url('path-to-your-footer-css-file'); */
-
-/* Additional existing CSS for other elements */

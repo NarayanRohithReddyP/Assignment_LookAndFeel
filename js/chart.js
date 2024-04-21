@@ -32,4 +32,27 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    var ctxGrowth = document.getElementById('growthChart').getContext('2d');
+    var growthChart = new Chart(ctxGrowth, {
+        type: 'line',
+        data: {
+            labels: ['2019', '2020', '2021', '2022', '2023'],
+            datasets: [{
+                label: 'Annual Revenue ($)',
+                data: [200000, 300000, 450000, 600000, 750000],
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 2,
+                fill: true
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
 });

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distribution of Investments Across Categories</title>
+    <title>Help & History - Crowd Funder</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/resources.css" />
     <link rel="icon" type="image/jpg" href="img/favicon.jpg">
@@ -10,15 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/chart.js" defer></script>
-
 </head>
 <body>
     <section id="header">
         <nav>
             <div class="logo">
-                <a href="index.html">
-                    <img src="img/latest-logo.jpg" alt="Crowd Funder Logo" />
-                </a>
+                <a href="index.html"><img src="img/latest-logo.jpg" alt="Crowd Funder Logo" /></a>
             </div>
             <div class="nav-links" id="nav-links">
                 <ul>
@@ -32,10 +30,34 @@
         </nav>
     </section>
 
-    <div class="chart-container">
-        <canvas id="investmentChart"></canvas>
-    </div>
+    <main>
+        <h1>How can we help?</h1>
+        <section class="tips-section">
+            <h2>Tips for Fundraising</h2>
+            <ul>
+                <li>Engage with your backers through updates and responsive communications.</li>
+                <li>Offer compelling rewards that incentivize higher contributions.</li>
+            </ul>
+            <h2>Tips for Investing</h2>
+            <ul>
+                <li>Assess projects for their potential impact and sustainability.</li>
+                <li>Diversify your investments across multiple projects.</li>
+            </ul>
+        </section>
 
+        <section class="history">
+            <h2>Our History</h2>
+            <p>The chart below shows the distribution of investments across different categories:</p>
+            <div class="chart-container">
+                <canvas id="investmentChart"></canvas>
+            </div>
+
+            <h2>Our growth in the past 5 years</h2>
+            <div class="chart-container">
+                <canvas id="growthChart"></canvas>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="social-icons">
@@ -46,7 +68,6 @@
         <div class="copy">
             &copy; 2024 Crowd Funder. All Rights Reserved.
         </div>
-
     </footer>
 </body>
 </html>
