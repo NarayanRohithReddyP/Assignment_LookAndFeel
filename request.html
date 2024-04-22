@@ -63,8 +63,6 @@
                         <img src="img/success.jpg" alt="Make a progress"> 
                         <h3>Make a progress</h3>
                     </div>
-                    <!-- Repeat for each step, make sure to replace 'path_to_your_image.jpg' with actual image paths and appropriate 'alt' text -->
-                    <!-- ... -->
                 </div>
             </div>
         </section>
@@ -135,14 +133,19 @@
                     <option value="healthcare">Healthcare</option>
                     <option value="education">Education</option>
                     <option value="environment">Environment</option>
-                    <!-- Add more options as needed -->
+                    <option value="emergency">Emergency</option>
+                    <option value="arts">Arts</option>
+                    <option value="socialimpact">Social Impact</option>
+                    <option value="sustainability">Sustainability</option>
+                    <option value="other">Other</option>
+
                 </select>
 
                 <div class="row">
                     <div class="col">
                         <label for="raising-for">Who are you raising for?</label>
                         <select type="text" id="raising-for" name="raising-for" required>
-                            <option value="">Please select</option> <!-- Prompt the user to select an option -->
+                            <option value="">Please select</option> 
                             <option value="yourself">Yourself</option>
                             <option value="someone_else">Someone else</option>
                             <option value="charity">Charity</option>
@@ -165,8 +168,8 @@
             </form>
         </div>
 
-        <!-- Preview Section for displaying entered data -->
-        <!-- Modal for Previewing Form Data -->
+        
+        
         <div id="preview-modal" class="modal" style="display:none;">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
@@ -187,7 +190,7 @@
                 <p><strong>Message:</strong> <span id="preview-message"></span></p>
                 <p><strong>Picture:</strong><br><img id="preview-image" src="" alt="No Image" style="max-width: 200px; max-height: 200px;" /></p>
 
-                <!-- Buttons for Edit, Delete, and Submit -->
+                
                 <button onclick="editForm()">Edit</button>
                 <button onclick="deleteForm()">Delete</button>
                 <button onclick="submitForm()">Submit</button>

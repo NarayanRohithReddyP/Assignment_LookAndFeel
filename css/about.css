@@ -23,7 +23,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
     .team-member img {
@@ -58,7 +58,7 @@
     #data-model img {
         max-width: 100%;
         height: auto;
-        border: 1px solid #ccc; /* Add border to the image */
+        border: 1px solid #ccc; 
         border-radius: 5px;
     }
 
@@ -72,7 +72,7 @@
         display: inline-block;
         background-color: #006848;
         color: #fff;
-        padding: 15px 30px; /* Increase padding for button */
+        padding: 15px 30px; 
         text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
@@ -80,6 +80,5 @@
     }
 
         #github a:hover {
-            background-color: #00573a;
-                    
+            background-color: #00573a;     
         }

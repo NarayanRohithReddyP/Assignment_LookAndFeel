@@ -3,19 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     var form = document.getElementById("fundraising-form");
     var previewModal = document.getElementById('preview-modal');
 
-    // Initially hide the form and ensure start button is visible
+    
     form.style.display = "none";
     startButton.style.display = "block";
 
-    // Handle the start button click to show form
+    
     startButton.addEventListener("click", function () {
         form.style.display = "block";
-        startButton.style.display = "none"; // Hide start button once form is visible
+        startButton.style.display = "none"; 
     });
 
-    // Event listener for form submission
+    
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent traditional form submission
+        event.preventDefault(); 
 
         var reader = new FileReader();
         var file = document.getElementById('picture').files[0];
@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (file) {
             reader.readAsDataURL(file);
         } else {
-            document.getElementById('preview-image').src = ''; // No image uploaded
+            document.getElementById('preview-image').src = ''; 
         }
 
-        // Set all other form field values for the preview
+        
         setPreview('first-name');
         setPreview('last-name');
         setPreview('email');
@@ -46,22 +46,21 @@ document.addEventListener("DOMContentLoaded", function () {
         setPreview('starting-amount');
         document.getElementById('preview-message').textContent = document.getElementById('message').value || 'N/A';
 
-        // Show modal
+        
         previewModal.style.display = 'block';
     });
 
-    // Close the modal
+    
     document.querySelector('.close-button').addEventListener('click', function () {
         previewModal.style.display = 'none';
     });
 });
 
-// Helper function to set preview data
+
 function setPreview(id) {
     document.getElementById('preview-' + id).textContent = document.getElementById(id).value;
 }
 
-// Functions for Edit, Delete, Submit
 function editForm() {
     document.getElementById('preview-modal').style.display = 'none';
     document.getElementById('fundraising-form').style.display = 'block';
@@ -70,9 +69,9 @@ function editForm() {
 function deleteForm() {
     document.getElementById('fundraising-form').reset();
     document.getElementById('preview-modal').style.display = 'none';
-    document.getElementById('start-button').style.display = 'block'; // Show start button again
+    document.getElementById('start-button').style.display = 'block'; 
 }
 
 function submitForm() {
-    alert('Form submitted!'); // Placeholder for actual submission logic
+    alert('Form submitted!'); 
 }
