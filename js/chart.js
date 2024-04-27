@@ -56,3 +56,40 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// Dummy data for donor age distribution
+var ageDistributionData = {
+    labels: ['18-25', '26-35', '36-45', '46-55', '56+'],
+    datasets: [{
+        label: 'Donor Age Distribution',
+        data: [20, 30, 25, 15, 10], // Dummy data
+        backgroundColor: [
+            '#ff6384',
+            '#36a2eb',
+            '#cc65fe',
+            '#ffce56',
+            '#4bc0c0'
+        ],
+        hoverOffset: 4
+    }]
+};
+
+// Chart configuration for donor age distribution
+var ageDistributionOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+        legend: {
+            position: 'bottom',
+        }
+    }
+};
+
+// Create the age distribution chart
+var ctxAgeDistribution = document.getElementById('ageDistributionChart').getContext('2d');
+var ageDistributionChart = new Chart(ctxAgeDistribution, {
+    type: 'doughnut',
+    data: ageDistributionData,
+    options: ageDistributionOptions
+});

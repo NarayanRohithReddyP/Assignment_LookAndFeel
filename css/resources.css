@@ -122,3 +122,19 @@ footer {
         width: 95%;
     }
 }
+
+
+/* Donor Age Distribution Chart */
+.donor-distribution {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .donor-distribution h2 {
+        font-size: 1.8em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
